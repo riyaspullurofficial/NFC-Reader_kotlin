@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/relativeLayoutMainActivityID"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/input_group">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Read NFC Data"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Bring near the NFC tag to the device!"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/input_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:text="Shop ID will be here!"
+                android:textColor="#FFFFFF"
+                android:id="@+id/txtviewshopid"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:text="Machine ID will be here!"
+                android:textColor="#FFFFFF"
+                android:id="@+id/txtviewmachineid"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:text="User ID will be here"
+                android:textColor="#FFFFFF"
+                android:id="@+id/txtviewuserid"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextdesign"
+                android:hint="User ID"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/txtuserid"
+                android:inputType="textPersonName"
+                android:padding="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="All the Readed contents will display above!"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttondesign"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Write NFC!"
+                android:textAllCaps="false"
+                android:id="@+id/btnwrite"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textAlignment="textEnd"
+                android:text="Testing Purposes"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
